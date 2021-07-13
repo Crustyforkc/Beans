@@ -6,6 +6,8 @@ public class playerAttributes : MonoBehaviour
 {
     public float health = 10;
     public string attack = "r";
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
