@@ -2,29 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerAttributes : MonoBehaviour
+public class axeController : MonoBehaviour
 {
-    public float health = 10;
+
     public string attack = "r";
- 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(health <=0)
+
+        if (Input.GetKey(attack))
         {
-            //die
-            Destroy(gameObject);
+            Debug.Log("attack from axe");
+            anim.SetTrigger("action");
         }
 
-        if(Input.GetKey(attack))
-        {
-            Debug.Log("attack");
-        }
-        
     }
 }
