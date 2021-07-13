@@ -158,7 +158,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 48
   m_CollisionDetection: 0
 --- !u!136 &6898013
 CapsuleCollider:
@@ -231,7 +231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6898011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44685364, y: 2.5, z: -4.8223104}
+  m_LocalPosition: {x: 1.93, y: 2.5, z: -2.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -249,6 +249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aba7177c75f77a41ba45e6e8543c342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 6898012}
+  forwardForce: 1000
+  sidewaysForce: 800
+  jumpHeight: 400
 --- !u!1 &273215151
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273215151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 29.7}
+  m_LocalPosition: {x: 1.32, y: 0, z: 29.7}
   m_LocalScale: {x: 25, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
@@ -355,6 +359,7 @@ GameObject:
   - component: {fileID: 1826950543}
   - component: {fileID: 1826950542}
   - component: {fileID: 1826950541}
+  - component: {fileID: 1826950544}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -427,6 +432,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1826950544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826950540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83d877bf83b28e48882e73012e03417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6898016}
+  offset: {x: 0, y: 1, z: -5}
 --- !u!1 &1944725745
 GameObject:
   m_ObjectHideFlags: 0
