@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2340932568970771595}
   - component: {fileID: 5395623894529529783}
   m_Layer: 0
-  m_Name: right_anchor
+  m_Name: weaponContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,7 +254,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4513085872424955376}
-  m_LocalRotation: {x: 0.16675441, y: 0.000000034975205, z: -0.00000000591509, w: 0.98599845}
+  m_LocalRotation: {x: 0.16675441, y: -0.000000034975205, z: 0.00000000591509, w: 0.98599845}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -423,7 +423,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4513085872537727101}
-  m_LocalRotation: {x: 0.18466164, y: 0.000000016910464, z: -0.0000000031773573, w: 0.98280215}
+  m_LocalRotation: {x: 0.18466164, y: -0.000000016910475, z: 0.0000000031773595, w: 0.98280215}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
